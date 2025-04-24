@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: darkblue;
+}
+
+h2 {
+  color: #333;
+  margin-top: 20px;
+}
+
+ol,
+ul {
+  margin-left: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #dceeff;
+}
+
+/* body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #005792;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #0077b6;
+  margin-top: 30px;
+}
+
+ol,
+ul {
+  margin-left: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #e3f2fd;
+}
+
+@media (max-width: 768px) {
+  table,
+  thead,
+  tbody,
+  tr,
+  th,
+  td {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  td {
+    margin-bottom: 15px;
+  }
+
+  td::before {
+    font-weight: bold;
+    display: block;
+  }
+
+  td:nth-of-type(1)::before {
+    content: "Course Name";
+  }
+  td:nth-of-type(2)::before {
+    content: "Instructor";
+  }
+  td:nth-of-type(3)::before {
+    content: "Duration";
+  }
+  td:nth-of-type(4)::before {
+    content: "Fee (INR ₹)";
+  }
+} */
