@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Registration Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="container">
+    <div class="form-container">
+      <h2 class="text-center mb-4">Event Registration</h2>
+
+      <form class="needs-validation" novalidate>
+        <!-- Name -->
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="name" placeholder="Full Name" required data-bs-toggle="tooltip" data-bs-placement="right" title="Enter your full name">
+          <label for="name">Full Name</label>
+          <div class="invalid-feedback">Please enter your name.</div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="email" placeholder="name@example.com" required data-bs-toggle="tooltip" data-bs-placement="right" title="Enter a valid email address">
+          <label for="email">Email address</label>
+          <div class="invalid-feedback">Please enter a valid email address.</div>
+        </div>
+
+        <!-- Phone -->
+        <div class="form-floating mb-3">
+          <input type="tel" class="form-control" id="phone" placeholder="Phone Number" required pattern="[0-9]{10}" data-bs-toggle="tooltip" data-bs-placement="right" title="Enter 10-digit mobile number">
+          <label for="phone">Phone Number</label>
+          <div class="invalid-feedback">Enter a valid 10-digit phone number.</div>
+        </div>
+
+        <!-- Event Selection -->
+        <div class="form-floating mb-3">
+          <select class="form-select" id="eventSelect" required data-bs-toggle="tooltip" data-bs-placement="right" title="Choose an event to attend">
+            <option value="" disabled selected>Select an Event</option>
+            <option value="tech">Tech Talk</option>
+            <option value="workshop">Coding Workshop</option>
+            <option value="seminar">AI Seminar</option>
+          </select>
+          <label for="eventSelect">Select Event</label>
+          <div class="invalid-feedback">Please choose an event.</div>
+        </div>
+
+        <!-- Comments -->
+        <div class="form-floating mb-4">
+          <textarea class="form-control" placeholder="Leave a comment here" id="comments" style="height: 100px" data-bs-toggle="tooltip" data-bs-placement="right" title="Any message or special request (optional)"></textarea>
+          <label for="comments">Additional Comments (Optional)</label>
+        </div>
+
+        <!-- Submit -->
+        <div class="text-center">
+          <button class="btn btn-primary w-100" type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Form Validation Script -->
+  <script src="script.js"></script>
+
+</body>
+</html>
