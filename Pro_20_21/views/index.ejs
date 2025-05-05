@@ -1,0 +1,98 @@
+<!-- filepath: mongo_employee_girish/views/index.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Records</title>
+  <!-- Add this to the <head> of each EJS file -->
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px auto;
+      background: #fff;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px 15px;
+      text-align: center;
+    }
+    th {
+      background: #eee;
+    }
+    a, button {
+      padding: 5px 10px;
+      margin: 2px;
+      text-decoration: none;
+      color: #fff;
+      background: #007bff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    a:hover, button:hover {
+      background: #0056b3;
+    }
+    form {
+      width: 300px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    input[type="text"], input[type="number"], input[type="date"] {
+      width: 95%;
+      padding: 8px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    button[type="submit"] {
+      width: 100%;
+      background: #28a745;
+    }
+    a[href="/"] {
+      display: inline-block;
+      margin-top: 10px;
+      background: #6c757d;
+    }
+  </style>
+</head>
+<body>
+  <h1>Employee Records</h1>
+  <a href="/add">Add New Employee</a>
+  <table border="1" cellpadding="8">
+    <tr>
+      <th>Name</th>
+      <th>Department</th>
+      <th>Designation</th>
+      <th>Salary</th>
+      <th>Joining Date</th>
+      <th>Actions</th>
+    </tr>
+    <% employees.forEach(emp => { %>
+      <tr>
+        <td><%= emp.Name %></td>
+        <td><%= emp.Department %></td>
+        <td><%= emp.Designation %></td>
+        <td><%= emp.Salary %></td>
+        <td><%= emp.Joining_Date ? emp.Joining_Date.toISOString().slice(0,10) : '' %></td>
+        <td>
+          <a href="/edit/<%= emp.Name %>">Edit</a>
+          <a href="/delete/<%= emp.Name %>" onclick="return confirm('Delete this employee?')">Delete</a>
+        </td>
+      </tr>
+    <% }) %>
+  </table>
+</body>
+</html>

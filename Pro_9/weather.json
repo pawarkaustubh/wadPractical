@@ -7,7 +7,7 @@
       "condition": "Humid and Sunny"
     },
     {
-      "name": "Pune",
+      "name": "Pune", 
       "temperature": "28°C",
       "humidity": "60%",
       "condition": "Cloudy"

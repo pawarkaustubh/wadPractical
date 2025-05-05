@@ -1,0 +1,26 @@
+✅ 1. Install Angular CLI globally
+
+sudo npm install -g @angular/cli
+This installs the Angular Command Line Interface (CLI), which is used to create and manage Angular projects.
+
+✅ 2. Create a new Angular project
+ng new my-angular-app
+It will ask:
+
+Would you like to add Angular routing? → (Type y or n)
+
+Which stylesheet format? → (Choose CSS/SCSS etc.)
+
+✅ 3. Navigate into the project folder
+
+cd my-angular-app
+
+✅ 4. Run the development server
+
+ng serve
+Or, to allow access from other devices (e.g., mobile on same network):
+
+
+ng serve --host 0.0.0.0
+Then open your browser and go to:
+http://localhost:4200

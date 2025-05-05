@@ -6,7 +6,7 @@ function getWeather() {
     resultDiv.innerHTML = "<p>Please enter a city name.</p>";
     return;
   }
-
+ 
   const xhr = new XMLHttpRequest();
   xhr.open("GET", "weather.json", true);
 
@@ -16,7 +16,7 @@ function getWeather() {
       const found = data.cities.find(
         (c) => c.name.toLowerCase() === city.toLowerCase()
       );
-
+      
       if (found) {
         resultDiv.innerHTML = `
             <h3>Weather in ${found.name}</h3>

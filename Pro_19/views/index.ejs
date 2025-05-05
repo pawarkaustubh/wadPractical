@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Marks App</title>
+  <style>
+    .btn { padding: 10px 20px; margin: 10px; background: #007bff; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+    .btn:hover { background: #0056b3; }
+    form { display: inline; }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Student Marks App</h1>
+  <form action="/insert" method="get"><button class="btn">Insert Documents</button></form>
+  <form action="/all" method="get"><button class="btn">View All Documents & Count</button></form>
+  <form action="/dsbda" method="get"><button class="btn">Students with DSBDA > 20</button></form>
+  <form action="/update/ABC" method="get"><button class="btn">Update Marks for ABC</button></form>
+  <form action="/all25" method="get"><button class="btn">Students with >25 Marks in All Subjects</button></form>
+  <form action="/less40" method="get"><button class="btn">Students with <40 in WAD & CNS</button></form>
+  <form action="/delete/XYZ" method="get"><button class="btn">Delete Student XYZ</button></form>
+  <form action="/table" method="get"><button class="btn">Display All Students in Table</button></form>
+</body>
+</html>

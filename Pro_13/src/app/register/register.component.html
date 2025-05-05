@@ -1,0 +1,17 @@
+<h2>Register</h2>
+<form #registerForm="ngForm" (ngSubmit)="onRegister(registerForm)">
+  <!-- Show error message if registration fails -->
+  <div *ngIf="registrationError" style="color: red; margin-bottom: 10px;">
+    {{ registrationError }}
+  </div>
+  <input type="text" name="username" ngModel placeholder="Username" required />
+  <input type="email" name="email" ngModel placeholder="Email" required />
+  <input type="password" name="password" ngModel placeholder="Password" required />
+  <button type="submit">Register</button>
+</form>
+
+<!-- Place this outside the form -->
+<p>
+  Already have an account?
+  <button type="button" style="margin-left: 8px;" (click)="goToLogin()">Login</button>
+</p>

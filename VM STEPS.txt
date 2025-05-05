@@ -1,0 +1,19 @@
+VM STEPS 
+1) Settings -> Expert -> Network -> Adapter1 -> Attached To (NAT) -> Adapeter2 -> Enable Network Adapter -> Host-Only-Adapter -> Start VM
+
+
+Kali Teriminal : 
+i)sudo apt update
+ii)sudo apt install openssh-server
+iii)sudo systemctl  start ssh
+iv)sudo systemctl status ssh
+
+
+Same Commnads on ubuntu terminal
+
+
+
+Check IP address of ubuntu & kali ( ip a ) 
+Create text file in kali using touch kanad.txt command 
+Add content and save the file
+scp kanad.txt ubuntu@(IP_ADDRESS_OF_UBUNTU):/home/ubuntu
