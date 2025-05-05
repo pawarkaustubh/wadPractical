@@ -1,0 +1,152 @@
+✅ Common Viva Questions & Answers for W1–W26 (Web Development Practicals)
+🔷 HTML & Structure
+1. What is semantic HTML and why is it important?
+Answer:
+Semantic HTML uses meaningful tags like <header>, <footer>, <article>, etc., which improve code readability and accessibility for screen readers and search engines.
+
+2. Difference between <div> and <section>?
+Answer:
+<div> is a generic container, while <section> is semantic and represents a standalone piece of content.
+
+3. What are the common HTML5 form input types you’ve used?
+Answer:
+text, email, password, number, date, radio, checkbox, and file.
+
+🔷 CSS & Styling
+4. What’s the difference between classes and IDs in CSS?
+Answer:
+Classes (.class) are reusable and can apply to multiple elements; IDs (#id) are unique and apply to only one element.
+
+5. How do media queries help in responsive design?
+Answer:
+Media queries allow CSS to apply styles based on device screen size or resolution, making the layout adaptable across devices.
+
+6. What is Flexbox and when do you use it?
+Answer:
+Flexbox is a CSS layout model that makes it easier to align and distribute space among items in a container.
+
+🔷 JavaScript & DOM
+7. What is DOM manipulation?
+Answer:
+It refers to using JavaScript to dynamically change the content, structure, or style of HTML elements.
+
+8. Explain event handling in JavaScript.
+Answer:
+Event handling involves listening for user actions (like clicks or keypresses) using methods like addEventListener.
+
+9. Difference between var, let, and const?
+Answer:
+
+var: function-scoped, can be redeclared
+
+let: block-scoped, can be reassigned
+
+const: block-scoped, cannot be reassigned
+
+10. What are arrow functions in JavaScript?
+Answer:
+Shorter syntax for writing functions. Example:
+
+js
+Copy
+Edit
+const add = (a, b) => a + b;
+🔷 Bootstrap & Layouts
+11. What is Bootstrap and why use it?
+Answer:
+Bootstrap is a front-end framework that provides ready-to-use components and responsive grid systems to speed up UI development.
+
+12. How does the Bootstrap grid system work?
+Answer:
+It divides the page into 12 columns using classes like col-md-6 for layout control across different screen sizes.
+
+🔷 Forms, Validation, and UX
+13. How did you validate form inputs?
+Answer:
+I used HTML5 attributes like required, pattern, minlength, and also custom JavaScript for more complex validation.
+
+14. What are some good UX practices for forms?
+Answer:
+Clear labels, real-time validation messages, field focus indicators, and meaningful error messages.
+
+🔷 APIs & JSON
+15. What is an API?
+Answer:
+An API (Application Programming Interface) is a way for two applications to communicate, typically using HTTP requests like GET, POST, PUT, DELETE.
+
+16. What is JSON and why is it used?
+Answer:
+JSON (JavaScript Object Notation) is a lightweight data-interchange format used for sending data between client and server.
+
+🔷 Node.js, Express, MongoDB (ME*N Stack)
+17. What is Node.js and why is it used?
+Answer:
+Node.js is a JavaScript runtime that allows you to run JavaScript on the server side for backend development.
+
+18. What is Express.js?
+Answer:
+Express is a Node.js framework used to build RESTful APIs easily, handling routing, middleware, and request/response management.
+
+19. How do you connect Node.js with MongoDB?
+Answer:
+Using the mongoose package to define schemas and interact with the MongoDB database.
+
+20. What is REST and RESTful routing?
+Answer:
+REST stands for Representational State Transfer. RESTful routing uses HTTP methods (GET, POST, PUT, DELETE) for CRUD operations.
+
+🔷 Authentication & Sessions
+21. What is the difference between session and JWT-based authentication?
+Answer:
+
+Session-based: Server stores login state; cookie holds session ID.
+
+JWT-based: Server issues a signed token after login, which is stored client-side and verified on each request.
+
+22. What are cookies and how are they used in authentication?
+Answer:
+Cookies are small data files stored in the browser, used to maintain session state or store JWT tokens.
+
+🔷 Angular-Specific (W25, W26)
+23. What is Angular?
+Answer:
+Angular is a TypeScript-based front-end framework for building single-page applications using components, services, and routing.
+
+24. What are components in Angular?
+Answer:
+Components are the basic UI building blocks of Angular, each with its own HTML, CSS, and logic.
+
+25. What are services in Angular and how are they used?
+Answer:
+Services are used for reusable logic like HTTP requests or shared data, and are injected into components using dependency injection.
+
+26. How does routing work in Angular?
+Answer:
+Routing in Angular uses the RouterModule to map URLs to specific components, allowing navigation between pages.
+
+🔷 Security & Best Practices
+27. What is XSS and how do you prevent it?
+Answer:
+Cross-Site Scripting (XSS) is injecting malicious scripts into webpages. It’s prevented by sanitizing user input and escaping output.
+
+28. What are some web development best practices you followed?
+Answer:
+
+Use of semantic HTML
+
+Responsive design with media queries
+
+Input validation
+
+Code reusability (functions, components)
+
+Security practices like input sanitization
+
+🔷 Project-Specific
+29. How is your application responsive across all devices?
+Answer:
+I used media queries, Bootstrap classes, or CSS Flexbox/Grid to ensure the layout adapts to different screen sizes.
+
+30. What challenges did you face while implementing this project?
+Answer:
+Common issues included CSS layout alignment, handling form validations, understanding REST API routes, and connecting frontend to backend securely.
